@@ -1,13 +1,1 @@
-document.addEventListener('keydown', function(event) {
-    if (event.ctrlKey && event.key === 'a') {
-        event.preventDefault();
-    }
-});
-
-document.addEventListener('selectstart', function(event) {
-    event.preventDefault();
-});
-
-document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
-});
+document.addEventListener('keydown',function(event){if(event.ctrlKey&&event.key==='a'){event.preventDefault()}});document.addEventListener('selectstart',function(event){event.preventDefault()});document.addEventListener('contextmenu',function(event){event.preventDefault()});function removeOverlay(){var overlay=document.querySelector(".black-overlay");Musica();overlay.style.transition="opacity 1s";overlay.style.opacity="0";setTimeout(()=>{overlay.style.display="none"},1000)}
