@@ -112,6 +112,10 @@ ul li a {
     color: transparent;
     -webkit-text-stroke: 1px var(--rosa);
     align-items: center;
+    padding: 150px; /* Aumenta a área de atuação do mouse */
+    box-sizing: border-box; /* Inclui o padding no tamanho total do elemento */
+    filter: drop-shadow(0px 0px 50px var(--rosa));
+
 }
 
 ul li a::before {
@@ -122,14 +126,15 @@ ul li a::before {
     align-items: center;
     margin: 0;
     overflow: hidden;
-    transition: .8s;
+    transition: width 4s cubic-bezier(0.2, 0.15, 1, 1); /* Aumenta o tempo da animação e torna o final mais rápido */
+    filter: blur(2px) drop-shadow(0px 0px 100px var(--rosa));
 }
 
 ul li a:hover::before {
     width: 100%;
     align-items: center;
     margin: 0 auto;
-    filter: blur(3px) drop-shadow(0px 0px 80px var(--rosa));
+    filter: blur(2px) drop-shadow(0px 0px 100px var(--rosa));
 }
 
 ul,
