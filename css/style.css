@@ -1,84 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
-
-html {
+body {
     background-color: #11111b;
-    font-family: 'Alexandria';
+    font-family: 'Alexandria', sans-serif;
     color: #cdd6f4;
-}
-
-header {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
 }
-
-main {
-    flex: 1;
-    padding: 20px;
-    margin-bottom: 60px;
-}
-
-h1 {
-    font-weight: 600;
-    font-size: 2.2em;
-    margin-top: 30px;
-    margin-bottom: 13px;
-}
-
-nav {
-    flex-direction: row;
-}
-
-nav a {
-    font-size: 1.1em;
-}
-
-section p {
-    margin-top: 40px;
-    font-size: 1.05em;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 0;
-    background-color: #11111b;
+header {
     text-align: center;
-    z-index: 10;
 }
-
-footer p {
-    margin: 10px;
+h1 {
+    font-weight:500;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
-
-#item {
-    font-size: 1.3em;
-    font-weight: 500;
-}
-
-.centered {
-    text-align: left;
-    max-width: 45%;
-    word-wrap: break-word;
-}
-
-.hl {
-    padding: 8px;
+a {
     color: #94e2d5;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: 2px;
     text-decoration-color: #b4befe;
-    text-underline-offset: 2px;
+    text-decoration-thickness: 3px;
+    margin: 0 10px;
 }
-
-.hl:hover {
+a:hover {
     text-decoration-color: #cba6f7;
 }
+p {
+    font-size: 1.6em;
+    margin: 0;
+}
+.content-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5%;
+    flex-wrap: wrap;
+}
+.block {
+    text-align: center;
+    padding: 20px;
+    width: 600px;
+    box-sizing: border-box;
+}
+footer {
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
 
-@media (max-width: 926px) { 
-    .centered {
-        max-width: 90%;
-    }   
+@media (max-width: 768px) {
+    .block {
+        width: 90%;
+    }
+    footer {
+        width: 90%;
+    }
 }
