@@ -18,8 +18,16 @@
     <script src="/js/oneko.js"></script>
     <div class="center">
         <a href="https://github.com/awangelo/" target="_blank"><img src="https://img.shields.io/badge/awangelo-222222?style=for-the-badge&logo=github&labelColor=121212&color=222222" /></a> 
-        <img src="https://img.shields.io/badge/bsdtar-222222?style=for-the-badge&logo=discord&labelColor=121212&color=222222" />
+        <span id="copy" style="cursor:pointer;" title="Copy"><img src="https://img.shields.io/badge/bsdtar-222222?style=for-the-badge&logo=discord&labelColor=121212&color=222222" /></span>
     </div>
+    <script>
+    document.getElementById('copy').addEventListener('click', function() {
+        navigator.clipboard.writeText('bsdtar');
+        const img = this.querySelector('img');
+        img.classList.add('inverted');
+        setTimeout(() => img.classList.remove('inverted'), 350);
+    });
+    </script>
 </body>
 
 </html>
