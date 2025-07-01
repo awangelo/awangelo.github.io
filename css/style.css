@@ -1,69 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
 body {
-    background-color: #11111b;
-    font-family: 'Alexandria', sans-serif;
-    color: #cdd6f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: #000000;
     margin: 0;
-    height: 100vh;
-}
-header {
-    text-align: center;
-}
-h1 {
-    font-weight:500;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-a {
-    color: #94e2d5;
-    text-decoration-color: #b4befe;
-    text-decoration-thickness: 3px;
-    margin: 0 10px;
-}
-a:hover {
-    text-decoration-color: #cba6f7;
-}
-p {
-    font-size: 1.6em;
-    margin: 0;
-}
-.content-container {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -5%;
-    flex-wrap: wrap;
-}
-.block {
-    text-align: center;
-    padding: 20px;
-    width: 600px;
-    box-sizing: border-box;
-}
-footer {
-    width: 60%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-    .block {
-        width: 90%;
-    }
-    footer {
-        width: 90%;
-    }
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2.5rem;
+}
+
+.center a {
+    height: 33px;
+}
+
+.center img {
+    height: 33px;
 }
